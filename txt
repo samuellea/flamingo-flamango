@@ -1,0 +1,58 @@
+     //setting state so that naturally pink goes first
+     
+     //array of 19 because 19 down
+     //fill grid with state on page
+        //empty squares are the empty squares on page
+
+        //bind this word to handle the click and the reset button
+    //passing as callback
+    //bind creates new function which executes the hald of the clock
+
+      //this generates a new empty grid when you reset and sets it to the grids state with setState = new empty grid on page.
+
+       //only add a piece and check for wins if the clicked square is empty
+    //we don't want to mutate state , so we store the reference to 'grid' in a const
+
+     //set the grid square coresponding to the clicked square to the colour of the current player
+      //grid of clicked green or pink square = state of pink true if not green
+
+      //set the state with the new grid data
+
+      //function for checking direction of colours
+
+       //track how many squares of a pink/green colour there are in directions (specified by x_ and y_)
+        //for example checkDirection(0,1, 'pink') checks how many pink dots there are in a row to the right )
+        // x pink y green to track dots coloured
+        //stop tracking dots when the colour is not equal to the specified dot or we have gone past the edge of the board
+        //g is grid, x is pink- not equal to undefined and dots of green and pink === colour
+        //increment the number of tracked dots//increment/decrease to check the next square in the specified direction
+
+        //sum the directions (left+right, up+down, 2 diagonals)
+
+              //check to see if there are any sums greater than or equal to 5 and alert the players of a win
+      //setTimeout is called if matches 5 to say you have won, different messages for different player winning
+
+        //define styles
+    //loop through the squares in each row and generate a new Square component,
+    //passing in props to the Square component in the nested map() function
+
+         //tr = row in table
+        // index of square in row
+
+         //return square component, passing in the following as props:
+            //square colour defined above in colour_,
+            //return handle clicks with grid index and colours passed in as arguments
+            //managing what happens with colour on click
+
+              //map through row, colour and square
+    //set the colour of the square based on state.grid
+    // colour is equal to the index and colour and index = empty make this colour/blank
+    //or if equal to pink = pink/green etc
+    //returns the board with the Square Components
+    //as well as Button that takes the handleReset function as a prop
+    //styling for returning board - title/ spaces inbetween cells, resetting, width of squares etc
+
+      const pink_diag2 =
+        checkDirection(-1, 1, "pink") + checkDirection(1, -1, "pink") - 1;
+      const green_diag2 =
+        checkDirection(-1, 1, "green") + checkDirection(-1, -1, "green") - 1;
