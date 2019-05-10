@@ -156,7 +156,7 @@ export class Board extends React.Component {
             Flamingo-Flamango
           </a>
         </h1>
-        <div style={{ margin: "auto", width: "40%" }}>
+        <div style={{ margin: "auto", width: "40vw" }}>
           <table cellSpacing="1" style={style}>
             <tbody>{board}</tbody>
           </table>
