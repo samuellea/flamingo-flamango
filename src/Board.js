@@ -110,8 +110,8 @@ export class Board extends React.Component {
       textAlign: "center",
       margin: "auto",
       height: "auto",
-      width: "500px",
-      border: "1px solid black",
+      width: "auto",
+      border: "1vw solid black",
       tableLayout: "fixed"
     };
     const g = this.state.grid;
