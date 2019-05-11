@@ -8,7 +8,7 @@ export class Button extends React.Component {
         style={{ textAlign: "center" }}
         onClick={this.props.onClick}
       >
-        refresh button...
+        Refresh button...
       </button>
     );
   }

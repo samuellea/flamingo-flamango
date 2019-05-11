@@ -6,10 +6,11 @@ export class Square extends React.Component {
     return (
       <td
         style={{
-          height: "15px",
+          //width: "1%",
+          //height: "15vh",
           backgroundColor: "#fffff",
           color: "red",
-          boarderColor: "pink",
+          boarderColor: " pink",
           border: ".30px solid pink"
         }}
         onClick={this.props.handleClick}
@@ -19,9 +20,9 @@ export class Square extends React.Component {
             color: "red",
             border: "1px solid",
             backgroundColor: colorOfSquare,
-            borderRadius: "50%",
+            borderRadius: "5vw",
             borderColor: colorOfSquare,
-            height: 18,
+            height: 19,
             width: 19
           }}
         />

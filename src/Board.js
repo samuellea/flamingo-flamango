@@ -75,9 +75,9 @@ export class Board extends React.Component {
         checkDirection(1, 1, " green") + checkDirection(-1, -1, "green") - 1;
 
       const pink_diag2 =
-        checkDirection(1, 1, "pink") + checkDirection(-1, -1, "pink") - 1;
+        checkDirection(-1, 1, "pink") + checkDirection(1, -1, "pink") - 1;
       const green_diag2 =
-        checkDirection(-1, 1, "green") + checkDirection(-1, -1, "green") - 1;
+        checkDirection(-1, 1, "green") + checkDirection(1, -1, "green") - 1;
 
       //check to see if there are any sums greater than or equal to 5 and alert the players of a win
       //setTimeout is called if matches 5 or more for winner to action something
@@ -111,7 +111,7 @@ export class Board extends React.Component {
       margin: "auto",
       height: "auto",
       width: "auto",
-      border: "1vw solid black",
+      border: "6px solid grey",
       tableLayout: "fixed"
     };
     const g = this.state.grid;
@@ -150,13 +150,13 @@ export class Board extends React.Component {
     });
 
     return (
-      <div style={{ textAlign: "center" }}>
+      <div>
         <h1>
           <a href="https://pbs.twimg.com/media/DSGwOJTWkAcyV31.jpg">
             Flamingo-Flamango
           </a>
         </h1>
-        <div style={{ margin: "auto", width: "40vw" }}>
+        <div style={{ height: "100%", width: "50vh" }}>
           <table cellSpacing="1" style={style}>
             <tbody>{board}</tbody>
           </table>
